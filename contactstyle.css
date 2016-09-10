@@ -1,0 +1,144 @@
+html {
+    color: #000;
+    background: #FFF
+}
+
+body, div, h1, h2 {
+    margin: 0;
+    padding: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+
+ strong {
+    font: inherit
+}
+
+
+h1, h2 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family:'Hiragino Kaku Gothic ProN';
+    backface-visibility: hidden;
+}
+
+body {
+    background: #010101;
+    transition: background .5s;
+    color: #fff
+}
+
+* {
+    outline: none
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+.logo {
+    width: 74px;
+    height: 41px;
+    position: fixed;
+    left: 34px;
+    top: 30px;
+    -webkit-transition: all .75s;
+    transition: all .75s;
+    z-index: 1;
+    display: block
+}
+
+.copyright {
+    position: fixed;
+    left: 35px;
+    bottom: 35px;
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 0.1em
+}
+
+.sub {
+    background: #fff;
+    color: #000;
+    text-align: center
+}
+
+.subwrap {
+    padding: 60px 0;
+    font-size: 13px;
+    display: table;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.1em
+}
+
+.subbody {
+    padding: 20px 0 60px;
+    width: 100%;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+.subbody_inner {
+    width: 500px;
+    padding: 60px 0;
+    opacity: 0;
+    transition: all 1.5s cubic-bezier(0.435, 0.080, 0.080, 1.000)
+}
+
+.subbody_holder {
+    display: inline-block;
+    width: 0;
+    margin-right: 500px;
+    transition: all 1s cubic-bezier(0.435, 0.080, 0.080, 1.000);
+    overflow: hidden
+}
+
+.subbody_holder {
+    width: 500px;
+    margin-right: 0px
+}
+
+.subbody_inner {
+    opacity: 1
+}
+
+.subwrap h1 {
+    font-size: 160px;
+    line-height: 94px;
+    letter-spacing: 0.1em;
+    color: #eee;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0
+}
+
+.sub .subwrap h1 {
+    opacity: 1
+}
+
+.subbody h2 {
+    font-size: 26px;
+    margin: 30px 0 50px
+}
+
+@media screen and (max-width:640px) {
+    * {
+        -webkit-text-size-adjust: 100%
+    }
+    
